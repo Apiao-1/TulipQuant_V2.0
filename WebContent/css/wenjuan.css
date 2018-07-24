@@ -1,0 +1,38 @@
+.box_center{
+	margin-left: auto;
+    margin-right: auto;
+}.user_body {
+    width: 960px;
+    margin-bottom: 40px;
+    border: 1px solid #d3d3d3;
+    padding:30px;
+}.kk_body {
+    padding-bottom: 0px;
+    padding-top: 20px;
+    position: relative;
+    top: 50px;
+}
+
+
+.description{
+	margin:20px auto;
+}.hint{
+	color: #4a90e2;
+}.question span:first{
+	margin-bottom: -10px;
+}.btnSubmit{
+	background-color: #4a90e2;
+	margin:20px auto;
+	font-size: 16px;
+	color:#fff;
+	/*width:500px;*/
+}.error{
+	float: right;
+	color:red;
+	font-size: 14px;
+}
+@media screen and (max-width:600px) {
+	.kk_body,.user_body{
+		width: 100%;
+	}
+}

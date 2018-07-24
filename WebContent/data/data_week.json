@@ -1,0 +1,312 @@
+// [
+//     {
+//         "stock": '紫光国芯',
+//         "ratio": 9821
+//     },
+//     {
+//         "stock": '中国平安',
+//         "ratio": 6181
+//     },
+//     {
+//         stock: '美的集团',
+//         ratio: 4386
+//     },
+//     {
+//         stock: '工商银行',
+//         ratio: 4055
+//     },
+//     {
+//         stock: '赣锋锂业',
+//         ratio: 2467
+//     },
+//     {
+//         stock: '韶钢松山',
+//         ratio: 2244
+//     },
+//     {
+//         stock: '万科A',
+//         ratio: 1898
+//     },
+//     {
+//         stock: '中通国脉',
+//         ratio: 1484
+//     },
+//     {
+//         stock: '国盛金控',
+//         ratio: 1112
+//     },
+//     {
+//         stock: '四维图新',
+//         ratio: 965
+//     },
+//     {
+//         stock: '士兰微',
+//         ratio: 947
+//     },
+//     {
+//         stock: '中国联通',
+//         ratio: 582
+//     },
+//     {
+//         stock: '农业银行',
+//         ratio: 555
+//     },
+//     {
+//         stock: '中兴通讯',
+//         ratio: 550
+//     },
+//     {
+//         stock: '万华化学',
+//         ratio: 462
+//     },
+//     {
+//         stock: '方大炭素',
+//         ratio: 366
+//     },
+//     {
+//         stock: '格力电器',
+//         ratio: 360
+//     },
+//     {
+//         stock: '华新水泥',
+//         ratio: 282
+//     },
+//     {
+//         stock: '天润乳业',
+//         ratio: 273
+//     },
+//     {
+//         stock: '深深房',
+//         ratio: 271
+//     },
+//     {
+//         stock: '爱尔眼科',
+//         ratio: 263
+//     },
+//     {
+//         stock: '青岛海尔',
+//         ratio: 258
+//     },
+//     {
+//         stock: '北方华创',
+//         ratio: 255
+//     },
+//     {
+//         stock: '中航机电',
+//         ratio: 9651
+//     },
+//     {
+//         stock: '天齐锂业',
+//         ratio: 6181
+//     },
+//     {
+//         stock: '通鼎互联',
+//         ratio: 4386
+//     },
+//     {
+//         stock: '工商银行',
+//         ratio: 4055
+//     },
+//     {
+//         stock: '赣锋锂业',
+//         ratio: 2467
+//     },
+//     {
+//         stock: '韶钢松山',
+//         ratio: 2244
+//     },
+//     {
+//         stock: '万科A',
+//         ratio: 1898
+//     },
+//     {
+//         stock: '中通国脉',
+//         ratio: 1484
+//     },
+//     {
+//         stock: '国盛金控',
+//         ratio: 1112
+//     },
+//     {
+//         stock: '四维图新',
+//         ratio: 965
+//     },
+//     {
+//         stock: '士兰微',
+//         ratio: 947
+//     },
+//     {
+//         stock: '中国联通',
+//         ratio: 582
+//     },
+//     {
+//         stock: '农业银行',
+//         ratio: 555
+//     },
+//     {
+//         stock: '中兴通讯',
+//         ratio: 550
+//     },
+//     {
+//         stock: '万华化学',
+//         ratio: 462
+//     },
+//     {
+//         stock: '方大炭素',
+//         ratio: 366
+//     },
+//     {
+//         stock: '中环股份',
+//         ratio: 360
+//     },
+//     {
+//         stock: '启明星辰',
+//         ratio: 282
+//     },
+//     {
+//         stock: '天润乳业',
+//         ratio: 273
+//     },
+//     {
+//         stock: '深深房',
+//         ratio: 271
+//     },
+//     {
+//         stock: '爱尔眼科',
+//         ratio: 263
+//     },
+//     {
+//         stock: '青岛海尔',
+//         ratio: 258
+//     },
+//     {
+//         stock: '北方华创',
+//         ratio: 255
+//     }
+// ]
+[
+    {
+        "stock": 10,
+        "ratio": "Item 10",
+    }
+]
+{stock:'新纶科技',ratio:820},
+{stock:'招商蛇口',ratio:825},
+{stock:'浙江龙盛',ratio:579},
+{stock:'上汽集团',ratio:527},
+{stock:'华兰生物',ratio:470},
+{stock:'光迅科技',ratio:420},
+{stock:'银轮股份',ratio:481},
+{stock:'开元股份',ratio:425},
+{stock:'大秦铁路',ratio:436},
+{stock:'苏宁易购',ratio:324},
+{stock:'威创股份',ratio:317},
+{stock:'分众传媒',ratio:381},
+{stock:'智飞生物',ratio:341},
+{stock:'中国化学',ratio:339},
+{stock:'龙马环卫',ratio:384},
+{stock:'楚江新材',ratio:363},
+{stock:'东山精密',ratio:303},
+{stock:'星宇股份',ratio:356},
+{stock:'万华化学',ratio:378},
+{stock:'视觉中国',ratio:321},
+{stock:'道氏技术',ratio:228},
+{stock:'中航沈飞',ratio:295},
+{stock:'喜临门',ratio:263},
+{stock:'长久物流',ratio:272},
+{stock:'常熟汽饰',ratio:208},
+{stock:'海信电器',ratio:214},
+{stock:'广汇汽车',ratio:213},
+{stock:'雷鸣科化',ratio:297},
+{stock:'诺力股份',ratio:257},
+{stock:'越博动力',ratio:288},
+{stock:'复星医药',ratio:221},
+{stock:'蒙娜丽莎',ratio:267},
+{stock:'科斯伍德',ratio:295},
+{stock:'高能环境',ratio:203},
+{stock:'克来机电',ratio:216},
+{stock:'华海药业',ratio:209},
+{stock:'友宝在线',ratio:252},
+{stock:'长江电力',ratio:241},
+{stock:'科达股份',ratio:226},
+{stock:'璞泰来',ratio:270},
+{stock:'长亮科技',ratio:272},
+{stock:'日机密封',ratio:220},
+{stock:'金融街',ratio:207},
+{stock:'光华科技',ratio:220},
+{stock:'保利地产',ratio:264},
+{stock:'华策影视',ratio:272},
+{stock:'均胜电子',ratio:216},
+{stock:'启迪桑德',ratio:263},
+{stock:'三七互娱',ratio:255},
+{stock:'平治信息',ratio:261},
+{stock:'三特索道',ratio:181},
+{stock:'老板电器',ratio:111},
+{stock:'众生药业',ratio:193},
+{stock:'京新药业',ratio:148},
+{stock:'珠江啤酒',ratio:143},
+{stock:'中颖电子',ratio:134},
+{stock:'数据港',ratio:139},
+{stock:'佩蒂股份',ratio:121},
+{stock:'深信服',ratio:188},
+{stock:'羚锐制药',ratio:128},
+{stock:'康拓红外',ratio:156},
+{stock:'亿帆医药',ratio:181},
+{stock:'扬农化工',ratio:150},
+{stock:'德展健康',ratio:147},
+{stock:'道明光学',ratio:156},
+{stock:'宝钢股份',ratio:132},
+{stock:'东方航空',ratio:112},
+{stock:'腾邦国际',ratio:147},
+{stock:'科华生物',ratio:137},
+{stock:'晶瑞股份',ratio:153},
+{stock:'花嫁丽舍',ratio:107},
+{stock:'艾瑞股份',ratio:113},
+{stock:'阿尼股份',ratio:132},
+{stock:'兆易创新',ratio:123},
+{stock:'日发精机',ratio:151},
+{stock:'工业富联',ratio:117},
+{stock:'华东医药',ratio:104},
+{stock:'华强方特',ratio:150},
+{stock:'山东黄金',ratio:145},
+{stock:'尚品宅配',ratio:137},
+{stock:'润达医疗',ratio:198},
+{stock:'泰豪科技',ratio:110},
+{stock:'杰克股份',ratio:133},
+{stock:'正泰电器',ratio:112},
+{stock:'益生股份',ratio:106},
+{stock:'东音股份',ratio:132},
+{stock:'国创高新',ratio:131},
+{stock:'顺鑫农业',ratio:154},
+{stock:'神马股份',ratio:127},
+{stock:'金龙汽车',ratio:191},
+{stock:'阳煤化工',ratio:113},
+{stock:'上实发展',ratio:133},
+{stock:'中信银行',ratio:132},
+{stock:'信捷电气',ratio:148},
+{stock:'创业软件',ratio:189},
+{stock:'重庆钢铁',ratio:177},
+{stock:'当代明诚',ratio:109},
+{stock:'比亚迪',ratio:161},
+{stock:'科陆电子',ratio:148},
+{stock:'申通快递',ratio:149},
+{stock:'振芯科技',ratio:161},
+{stock:'阳谷华泰',ratio:137},
+{stock:'花园生物',ratio:154},
+{stock:'南山铝业',ratio:104},
+{stock:'荣泰健康',ratio:146},
+{stock:'瀚蓝环境',ratio:101},
+{stock:'科大讯飞',ratio:134},
+{stock:'山东药玻',ratio:186},
+{stock:'利群股份',ratio:166},
+{stock:'海南瑞泽',ratio:175},
+{stock:'东旭蓝天',ratio:161},
+{stock:'四创电子',ratio:119},
+{stock:'海普瑞',ratio:105},
+{stock:'中金环境',ratio:104},
+{stock:'鼎胜新材',ratio:155},
+{stock:'豫园股份',ratio:108},
+{stock:'大北农',ratio:161},
+{stock:'广誉远',ratio:128},
+{stock:'帝欧家居',ratio:130},
+{stock:'九牧王',ratio:171},

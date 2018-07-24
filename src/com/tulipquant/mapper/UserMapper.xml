@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tulipquant.mapper.UserMapper">
+
+	<resultMap type="com.tulipquant.pojo.User" id="userMap">
+        <id property="uid" column="uid" />
+        <result property="username" column="username" />
+        <result property="password" column="password" />
+        <!-- <result property="tele" column="tele" />  
+        <result property="release" column="release" />
+        <result property="history" column="history" />
+        <result property="answer" column="answer" /> -->
+    </resultMap>
+
+	<select id="getUserByName" parameterType="string" resultMap="userMap" >
+		select * from user where username = #{username}
+	</select>
+
+	<insert id="addUser" parameterType="com.tulipquant.pojo.User">
+		insert into user (uid,username,password) values (#{uid},#{username},#{password})
+	</insert>
+
+	<delete id="deleteUser" parameterType="int">
+		delete from user where uid = #{uid}
+	</delete>
+	
+	<update id="updateUser" parameterType="com.tulipquant.pojo.User">
+		update 
+	</update>
+	
+	<select id="selectAll"  resultType="com.tulipquant.pojo.User" parameterType="Map">
+		select * from user
+		<if test="a!=null">
+			<where> 
+				<if test="username!=null and username!=''"> username=#{username}</if>
+				<if test="uid!=null and uid!=''">AND  uid=#{uid}</if>
+			</where>
+			LIMIT #{a},#{b}
+		</if>
+	</select>
+</mapper>

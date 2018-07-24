@@ -1,0 +1,41 @@
+@media screen and (max-width:600px) {
+    .help {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+    }
+    .specificHead {
+        background-color: #253DAF;
+        padding-top: 12px;
+        height: 52px;
+        width: 100%;
+    }
+    header .top {
+        width: 100%;
+    }
+    #login-wrap {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+    }.specificHead {
+    background-color: #253DAF;
+    padding-top: 12px;
+    height: 52px;
+    position: relative;
+    width: 375px;
+}
+#menu{
+	margin-right:-50px;
+}.new-line-board-value{
+	opacity: 0;
+        visibility: hidden;
+        display: none;
+}.board-value {
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-size: 17px;
+}.list .row .board-value{
+	width:33.3%;
+}
+}

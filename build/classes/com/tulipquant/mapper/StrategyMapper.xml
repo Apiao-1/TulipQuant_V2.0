@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.tulipquant.mapper.StrategyMapper">
+
+	<resultMap type="com.tulipquant.pojo.Strategy" id="strategyMap">
+        <id property="sid" column="sid" />
+        <result property="sName" column="sName" />
+        <result property="sPrice" column="sPrice" />
+        <result property="sLogic" column="sLogic" />  
+    </resultMap>
+
+	<select id="getStrategyById" parameterType="int" resultMap="strategyMap" >
+		select * from user where sid = #{sid}
+	</select>
+
+	<insert id="addStrategy" parameterType="com.tulipquant.pojo.Strategy">
+		insert into strategy (sid,sName,sPrice) values (#{sid},#{sName},#{sPrice})
+	</insert>
+
+	<delete id="deleteStrategy" parameterType="int">
+		delete from strategy where sid = #{sid}
+	</delete>
+
+	<update id="updateStrategy" parameterType="com.tulipquant.pojo.Strategy">
+		update strategy set 
+	</update>
+
+</mapper>

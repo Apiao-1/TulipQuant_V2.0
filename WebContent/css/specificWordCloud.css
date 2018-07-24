@@ -1,0 +1,16 @@
+.content{
+	/*padding-top: -110px;*/
+    display: inline-block;
+    width: 81%;
+    margin:auto;
+    height: 800px;
+    float: left;
+}.stock{
+	display: inline-block;
+	width: 19%;
+	height: 800px;
+	/*padding-top: 52px;*/
+	padding-left:-150px;
+	/*margin: 30px;*/
+
+}

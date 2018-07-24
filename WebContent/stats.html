@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>欢迎进入管理员系统</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+    <link href="assets/styles.css" rel="stylesheet" media="screen">
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="vendors/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+
+<body>
+    <header class="specificHead">
+        <div class="top inner-wrap clearfix ">
+            <a href="#" class="logo"><img src="img/logo11.png" alt=""></a>
+            <ul class="clearfix" id="menu">
+                <li>
+                    <a href="index.html">首页</a>
+                </li>
+                <li class="help">
+                    <a href="javascript:;">量化策略</a>
+                    <div class="sub">
+                        <a href="celue.html">策略商场</a>
+                        <a href="celue.html">售卖我的策略</a>
+                        <span class="arrow"></span>
+                    </div>
+                </li>
+                <li class="help">
+                    <a href="feature.html">特色功能</a>
+                    <div class="sub">
+                        <a href="feature.html#AR">AR增强显示</a>
+                        <a href="feature.html#wordCloud">热门股票词云</a>
+                        <a href="feature.html#imageIdentity">随手拍 出股票</a>
+                        <a href="feature.html#recommend">智能策略推荐</a>
+                        <a href="feature.html#news">舆情分析</a>
+                        <span class="arrow"></span>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="help">量化选股</a>
+                </li>
+                <li class="help">
+                    <a href="javascript:;">帮助</a>
+                    <div class="sub">
+                        <a href="#">关于御宽</a>
+                        <a href="#">团队概况</a>
+                        <a href="#">加入我们</a>
+                        <a href="#">反馈</a>
+                        <span class="arrow"></span>
+                    </div>
+                </li>
+                <li id="admin" class="help">
+                    <a href="admin.html">管理中心</a>
+                    <div class="sub">
+                        <a href="index.html" class="cancel">注销</a>
+                        <span class="arrow"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span3" id="sidebar">
+                <ul class="nav nav-list bs-docs-sidenav nav-collapse collapse">
+                    <li>
+                        <a href="admin.html"><i class="icon-chevron-right"></i> 用户管理</a>
+                    </li>
+                    <li>
+                        <a href="calendar.html"><i class="icon-chevron-right"></i> 日志记录</a>
+                    </li>
+                    <li>
+                        <a href="receiveSgy.html"><span class="badge badge-success pull-right">3</span> 上架管理</a>
+                    </li>
+                    <li class="active">
+                        <a href="stats.html"><i class="icon-chevron-right"></i> 数据分析</a>
+                    </li>
+                    <li>
+                        <a href="receive.html"><span class="badge badge-success pull-right">7</span> 用户反馈</a>
+                    </li>
+                    <li>
+                        <a href="suConfig.html"><i class="icon-chevron-right"></i> 参数配置（超级管理员）</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/span-->
+            <div class="span9" id="content">
+                <!-- morris stacked chart -->
+                <div class="row-fluid">
+                    <!-- block -->
+                    <div class="block">
+                        <div class="navbar navbar-inner block-header">
+                            <div class="muted pull-left">终端访问数量统计</div>
+                            <div class="pull-right"><span class="badge badge-warning">View More</span>
+                            </div>
+                        </div>
+                        <div class="block-content collapse in">
+                            <div class="span12">
+                                <div id="hero-area" style="height: 250px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /block -->
+                </div>
+                <!-- morris graph chart -->
+                <div class="row-fluid section">
+                    <!-- block -->
+                    <div class="block">
+                        <div class="navbar navbar-inner block-header">
+                            <div class="muted pull-left">流量统计</div>
+                            <div class="pull-right"><span class="badge badge-warning">View More</span>
+                            </div>
+                        </div>
+                        <div class="block-content collapse in">
+                            <div class="span12">
+                                <div id="hero-graph" style="height: 230px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /block -->
+                </div>
+                <!-- morris bar & donut charts -->
+                <div class="row-fluid section">
+                    <!-- block -->
+                    <div class="block">
+                        <div class="navbar navbar-inner block-header">
+                            <div class="muted pull-left">策略板块统计</div>
+                            <div class="pull-right"><span class="badge badge-warning">View More</span>
+                            </div>
+                        </div>
+                        <div class="block-content collapse in">
+                            <div class="span6 chart">
+                                <h5>板块均价</h5>
+                                <div id="hero-bar" style="height: 250px;"></div>
+                            </div>
+                            <div class="span5 chart">
+                                <h5>板块销售量统计</h5>
+                                <div id="hero-donut" style="height: 250px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /block -->
+                </div>
+                
+            </div>
+        </div>
+        <hr>
+    </div>
+    <!--/.fluid-container-->
+    <link rel="stylesheet" href="vendors/morris/morris.css">
+    <script src="vendors/jquery-1.9.1.min.js"></script>
+    <script src="vendors/jquery.knob.js"></script>
+    <script src="vendors/raphael-min.js"></script>
+    <script src="vendors/morris/morris.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+<!--     <script src="vendors/flot/jquery.flot.js"></script>
+    <script src="vendors/flot/jquery.flot.categories.js"></script>
+    <script src="vendors/flot/jquery.flot.pie.js"></script>
+    <script src="vendors/flot/jquery.flot.time.js"></script>
+    <script src="vendors/flot/jquery.flot.stack.js"></script>
+    <script src="vendors/flot/jquery.flot.resize.js"></script> -->
+    <script src="assets/scripts.js"></script>
+    <script>
+    $(function() {
+        var data = [
+            ["January", 10],
+            ["February", 8],
+            ["March", 4],
+            ["April", 13],
+            ["May", 17],
+            ["June", 9]
+        ];
+
+        $.plot("#catchart", [data], {
+            series: {
+                bars: {
+                    show: true,
+                    barWidth: 0.6,
+                    align: "center"
+                }
+            },
+            xaxis: {
+                mode: "categories",
+                tickLength: 0
+            }
+        });
+
+        var data = [],
+            series = Math.floor(Math.random() * 6) + 3;
+
+        for (var i = 0; i < series; i++) {
+            data[i] = {
+                label: "Series" + (i + 1),
+                data: Math.floor(Math.random() * 100) + 1
+            }
+        }
+
+        $.plot('#piechart1', data, {
+            series: {
+                pie: {
+                    show: true,
+                    radius: 1,
+                    label: {
+                        show: true,
+                        radius: 3 / 4,
+                        formatter: labelFormatter,
+                        background: {
+                            opacity: 0.5,
+                            color: '#000'
+                        }
+                    }
+                }
+            },
+            legend: {
+                show: false
+            }
+        });
+
+        $.plot('#piechart2', data, {
+            series: {
+                pie: {
+                    show: true,
+                    radius: 1,
+                    tilt: 0.5,
+                    label: {
+                        show: true,
+                        radius: 1,
+                        formatter: labelFormatter,
+                        background: {
+                            opacity: 0.8
+                        }
+                    },
+                    combine: {
+                        color: '#999',
+                        threshold: 0.1
+                    }
+                }
+            },
+            legend: {
+                show: false
+            }
+        });
+        function euroFormatter(v, axis) {
+            return v.toFixed(axis.tickDecimals) + "€";
+        }
+
+        function doPlot(position) {
+            $.plot("#timechart", [
+                { data: oilprices, label: "全市场策略均价 (¥)" },
+                { data: exchangerates, label: "沪深300", yaxis: 2 }
+            ], {
+                xaxes: [{ mode: "time" }],
+                yaxes: [{ min: 0 }, {
+                    // align if we are to the right
+                    alignTicksWithAxis: position == "right" ? 1 : null,
+                    position: position,
+                    tickFormatter: euroFormatter
+                }],
+                legend: { position: "sw" }
+            });
+        }
+
+        doPlot("right");
+
+    });
+
+    // Morris Bar Chart
+    Morris.Bar({
+        element: 'hero-bar',
+        data: [
+            { device: '1', sells: 136 },
+            { device: '3G', sells: 1037 },
+            { device: '3GS', sells: 275 },
+            { device: '4', sells: 380 },
+            { device: '4S', sells: 655 },
+            { device: '5', sells: 1571 }
+        ],
+        xkey: 'device',
+        ykeys: ['sells'],
+        labels: ['Sells'],
+        barRatio: 0.4,
+        xLabelMargin: 10,
+        hideHover: 'auto',
+        barColors: ["#3d88ba"]
+    });
+
+
+    // Morris Donut Chart
+    Morris.Donut({
+        element: 'hero-donut',
+        data: [
+            { label: '人工智能', value: 25 },
+            { label: '动量反转', value: 40 },
+            { label: '大/小市值', value: 25 },
+            { label: '大/小盘股', value: 10 }
+        ],
+        colors: ["#30a1ec", "#76bdee", "#c4dafe"],
+        formatter: function(y) { return y + "%" }
+    });
+
+
+    // Morris Line Chart
+    var tax_data = [
+        { "period": "2018-04", "visits": 2407, "signups": 660 },
+        { "period": "2018-03", "visits": 3351, "signups": 729 },
+        { "period": "2018-02", "visits": 2469, "signups": 1318 },
+        { "period": "2018-01", "visits": 2246, "signups": 461 },
+        { "period": "2017-12", "visits": 3171, "signups": 1676 },
+        { "period": "2017-11", "visits": 2155, "signups": 681 },
+        { "period": "2017-10", "visits": 1226, "signups": 620 },
+        { "period": "2017-09", "visits": 2245, "signups": 500 }
+    ];
+    Morris.Line({
+        element: 'hero-graph',
+        data: tax_data,
+        xkey: 'period',
+        xLabels: "month",
+        ykeys: ['visits', 'signups'],
+        labels: ['访问量', '注册量']
+    });
+
+
+
+    // Morris Area Chart
+    Morris.Area({
+        element: 'hero-area',
+        data: [
+            { period: '2017 Q3', iphone: 4820, ipad: 3795, itouch: 1588 },
+            { period: '2017 Q4', iphone: 15073, ipad: 5967, itouch: 5175 },
+            { period: '2018 Q1', iphone: 10687, ipad: 4460, itouch: 2028 },
+            { period: '2018 Q2', iphone: 8432, ipad: 5713, itouch: 1791 }
+        ],
+        xkey: 'period',
+        ykeys: ['iphone', 'ipad', 'itouch'],
+        labels: ['PC', '手机', '平板'],
+        lineWidth: 2,
+        hideHover: 'auto',
+        lineColors: ["#81d5d9", "#a6e182", "#67bdf8"]
+    });
+
+
+
+    // Build jQuery Knobs
+    $(".knob").knob();
+
+    function labelFormatter(label, series) {
+        return "<div style='font-size:8pt; text-align:center; padding:2px; color:white;'>" + label + "<br/>" + Math.round(series.percent) + "%</div>";
+    }
+    
+    </script>
+</body>
+
+</html>
