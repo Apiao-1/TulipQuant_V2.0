@@ -207,94 +207,96 @@
                         <p><span>“基于</span><b>增量式爬虫</b>爬取各大论坛的回帖与评论，进一步利用<b>人工智能</b>分词提取关键信息，通过<b>大数据</b>计算分析市场的<b>情绪指标</b>，最终得到如右图所示的市场情绪指标</p>
                     </div>
                     <div class="content clearfix browse">
-                        <div class="browse">
-                            <div id="newsAnalyse" style="width: 450px;height:360px;"></div>
-                            <script type="text/javascript">
-                            $.ajax({
-                                method: 'POST',
-                                url: '/Tulip-Quant/echarts/opinionanalysis',
-                                dataType: 'json',
-                                success: function(data) {
-                                    initChart(data);
-                                }
-                            });
-
-                            function initChart(data) {
-                                var myChart = echarts.init(document.getElementById('newsAnalyse'));
-
-                                var date = [];
-                                var opinionGood = [];
-                                var opinionBad = []
-
-                                for (var i = 0; i < 5; i++) {
-                                    date.push(data[i].date);
-                                    opinionGood.push(data[i].opinion);
-                                    opinionBad.push(1 - data[i].opinion);
-                                }
-
-                                var option = {
-                                    title: {
-                                        text: '市场情绪指标'
-                                    },
-                                    tooltip: {
-                                        trigger: 'axis',
-                                        axisPointer: { // 坐标轴指示器，坐标轴触发有效
-                                            type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
+                        <div class="browse" id="chart">
+                            <div id="newsAnalyse" style="width: 450px;height:360px;">
+                                <script type="text/javascript">
+                                    $.ajax({
+                                        method: 'POST',
+                                        url: '/Tulip-Quant/echarts/opinionanalysis',
+                                        dataType: 'json',
+                                        success: function(data) {
+                                            initChart(data);
                                         }
-                                    },
-                                    legend: {
-                                        data: ['正面情绪', '负面情绪']
-                                    },
-                                    grid: {
-                                        left: '5%',
-                                        right: '4%',
-                                        bottom: '3%',
-                                        containLabel: true
-                                    },
-                                    xAxis: [{
-                                        type: 'value'
-                                    }],
-                                    yAxis: [{
-                                        type: 'category',
-                                        axisTick: { show: false },
-                                        data: date
-                                    }],
-                                    series: [{
-                                            name: '正面情绪',
-                                            type: 'bar',
-                                            stack: '总量',
-                                            label: {
-                                                normal: {
-                                                    show: true
+                                    });
+
+                                    function initChart(data) {
+                                        var myChart = echarts.init(document.getElementById('newsAnalyse'));
+
+                                        var date = [];
+                                        var opinionGood = [];
+                                        var opinionBad = []
+
+                                        for (var i = 0; i < 5; i++) {
+                                            date.push(data[i].date);
+                                            opinionGood.push(data[i].opinion);
+                                            opinionBad.push(1 - data[i].opinion);
+                                        }
+
+                                        var option = {
+                                            title: {
+                                                text: '市场情绪指标'
+                                            },
+                                            tooltip: {
+                                                trigger: 'axis',
+                                                axisPointer: { // 坐标轴指示器，坐标轴触发有效
+                                                    type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
                                                 }
                                             },
-                                            data: opinionGood
-                                        },
-                                        {
-                                            name: '负面情绪',
-                                            type: 'bar',
-                                            stack: '总量',
-                                            label: {
-                                                normal: {
-                                                    show: true,
-                                                    position: 'left'
-                                                }
+                                            legend: {
+                                                data: ['正面情绪', '负面情绪']
                                             },
-                                            data: opinionBad
-                                        }
-                                    ]
-                                };
-                                // 使用刚指定的配置项和数据显示图表。
-                                myChart.setOption(option);
-
-                            }
-                            </script>
+                                            grid: {
+                                                left: '5%',
+                                                right: '4%',
+                                                bottom: '3%',
+                                                containLabel: true
+                                            },
+                                            xAxis: [{
+                                                type: 'value'
+                                            }],
+                                            yAxis: [{
+                                                type: 'category',
+                                                axisTick: { show: false },
+                                                data: date
+                                            }],
+                                            series: [{
+                                                    name: '正面情绪',
+                                                    type: 'bar',
+                                                    stack: '总量',
+                                                    label: {
+                                                        normal: {
+                                                            show: true
+                                                        }
+                                                    },
+                                                    data: opinionGood
+                                                },
+                                                {
+                                                    name: '负面情绪',
+                                                    type: 'bar',
+                                                    stack: '总量',
+                                                    label: {
+                                                        normal: {
+                                                            show: true,
+                                                            position: 'left'
+                                                        }
+                                                    },
+                                                    data: opinionBad
+                                                }
+                                            ]
+                                        };
+                                        // 使用刚指定的配置项和数据显示图表。
+                                        myChart.setOption(option);
+                                    }
+                                </script>
+                            </div>
                         </div>
                         <button class="historyBtn btn btn-primary" onclick="javascrtpt:window.location.href='opinionAnalysis.html'">查看往期</button>
                     </div>
+                    
                 </div>
-            </li>
-        </ul>
+    </div>
+    </li>
+    </ul>
     </div>
 </body>
 <!-- js -->

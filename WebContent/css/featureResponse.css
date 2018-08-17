@@ -1,9 +1,15 @@
 @media screen and (max-width:600px) {
-	#menu {
+	#menu,#news {
         margin-right: 0px;
         opacity: 0;
         visibility: hidden;
         display: none;
+    }
+    #chart {
+        margin-right: 0px;
+/*        opacity: 0;
+*/        visibility: hidden;
+        /*display: none;*/
     }.navbar-header{
     	min-height: 78px;
     }
